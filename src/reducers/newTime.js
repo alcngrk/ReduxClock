@@ -10,10 +10,7 @@ function newTimeReducer(state = initialState, action) {
         case "CHANGE_TIME":
             return action.payload;  //remember changeTime() function
         default:
-            return {
-                time: state.time ,
-                elapsedTime: state.elapsedTime,
-            };
+            return state;
     }
 }
 
