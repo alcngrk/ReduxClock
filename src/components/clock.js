@@ -8,7 +8,7 @@ class Clock extends React.Component {
     }
 
     componentDidMount(){
-        this.cycle = setInterval(() => {
+        setInterval(() => {
             this.props.changeTime(this.props.elapsedTime);
         }, 
         1000);
